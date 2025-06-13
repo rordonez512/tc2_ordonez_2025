@@ -16,9 +16,9 @@ import numpy as np
 from pytc2.sistemas_lineales import pzmap, GroupDelay, bodePlot
 
 w0 = 1
-qq = np.sqrt(2)/2
+qq = 1
 
-my_tf = TransferFunction( [w0**2], [1, w0/qq, w0**2] )
+my_tf = TransferFunction( [1,-w0], [1, -(w0/qq)] )
 
 
 plt.close('all')
